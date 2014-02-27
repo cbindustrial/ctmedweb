@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Controle Medidas</title>
+ <meta name="Author" content="Sergio Silvestre"/>
+ <meta http-Equiv="Cache-Control" Content="no-cache">
+ <meta http-Equiv="Pragma" Content="no-cache">
+ <meta http-Equiv="Expires" Content="0">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" type="text/css" href="medidas.css" />
+ <link rel="stylesheet" media="all" type="text/css" href="jquery-impromptu.css" />
+ <script type="text/javascript" src="../../js/jquery-1.8.3.min.js"></script>
+ <script type="text/javascript" src="jquery-impromptu.js"></script>
+</head>
+<body> 
+ <div id="topoCB" >CB Industrial</div>  
+ <div id="btBack" class="bt" ><a>Voltar</a></div>
+ <img id="statusRede" class="img" alt="" src="http://10.0.0.50:8888/ctmedweb/penguin_on.png" onerror="this.src='penguin_off.png'" >adsfasfa</img>
+ 
+  <label class="lb" id="lbc1" >Ordem de Produção:</label>
+  <input id="c1" class="in" type="text" tabindex="1" name="c1" size="6" value="" pattern="[0-9]{6}" title="Digite o numero da OP." required/>
+  
+ <div id="corpo">
+  <div id="tabelas"> <table id="tbprods"></table> <hr style="width:90%;"> <table id="tbop"></table> </div>
+  <div id='etiq'>
+   <div id="cli"></div> 
+   <div id="coditem"></div>
+   <div id="descitem"></div>
+   <div id="op"></div>
+   <div id='panelpeso'>
+    <div id='pb'></div>
+    <div id='pl'></div>
+    <div id='tr'></div>
+    <div id='pu'></div>
+   </div>
+   <div id='panelpecas'>
+    <p>Peças:</p>
+    <p id='np'></p>
+   </div>
+   <div id="usu"></div>
+   <div id="cbs">
+    <div id="cb1">CB Industrial</div>
+    <div id="cb2">cbindustrial.com.br  11-4018.4041</div>
+   </div>
+  </div>
+  <img  id="foto" name="foto" src="VistaCbPinhal.jpg"/>
+ </div>
+ <div id="panelFases" class="statusBar"></div>
+ <div id="statusBar" class="statusBar"></div>
+ <p id="ip"></p> 
+ <script src="medidas.js"></script>
+ </body>
+</html>

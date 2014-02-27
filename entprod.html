@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+	<head>
+    <title>Entradas no Estoque</title>
+    <meta name="Author" content="Sergio Silvestre"/>
+    <meta http-Equiv="Cache-Control" Content="no-cache">
+    <meta http-Equiv="Pragma" Content="no-cache">
+    <meta http-Equiv="Expires" Content="0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="entprod.css" />
+    <!--
+     <script src="../../js/jquery-1.8.3.min.js"></script>
+     <link rel="stylesheet" media="all" type="text/css" href="jquery-impromptu.css" />
+      <script src="jquery-impromptu.js"> </script>
+      <script src="plusastab.js"> </script>
+      <script src="emulatab.js"> </script>
+    -->
+  </head>
+
+  <body> 
+    <div id="topoCB" >CB Industrial</div>  
+    <div id="btBack" class="bt" ><a>Voltar</a></div>
+    <div id="entop">
+			<label class="lb" id="lbc1" >Ordem de Produção:</label>
+			<input id="c1" class="in" type="text" tabindex="1" name="c1" size="6" value="" pattern="[0-9]{6}" title="Digite o numero da OP." required/>
+    </div> 
+    <div id="corpo">
+			<div id="prods"><table id="tbprods"></table></div>
+			<div id='etiq'>
+				<div id="cli"></div> 
+				<div id="dthr"></div>
+				<div id="coditem"></div>
+				<div id="descitem"></div>
+				<div id="op"></div>
+				<div id='panelpeso'>
+					<div id='pb'></div>
+					<div id='pl'></div>
+					<div id='tr'></div>
+					<div id='pu'></div>
+				</div>
+				<div id='panelpecas'>
+					<p>Peças:</p>
+					<p id='np'></p>
+				</div>
+				<div id="usu"></div>
+				<div id="cbs">
+					<div id="cb1">CB Industrial</div>
+					<div id="cb2">cbindustrial.com.br  11-4018.4041</div>
+				</div>
+			</div>
+			
+			
+			<img  id="foto" name="foto" src="vazio.png"/>
+			<!-- 
+								<p class="tb1" id="lb1"></p>
+								<p class="tb1" id="lb2"></p>
+								<p class="tb1" id="lbEst"></p>              
+								<p class="tb1" id="lbLote"></p>
+								<p class="tb1" id="lbScrap"></p>            
+			-->
+				
+			<div id='panelbt1'>
+				<div class="bt" id='btEtiqueta'><a>Etiqueta</a></div>
+				<div class="bt" id='btLocal'><a>Local</a></div>
+				<div class="bt" id='btScrap'><a>Scrap</a></div>
+				<div class="bt" id='btRelat' href='relprod.html' onClick='return popup(this, "Sergio")'><a>Relatorio</a></div>
+			</div>
+			<div id='panelbt2'>
+				<div class="bt" id='btQtd'><a>Grava Qtd. (PA)</a></div>
+				<div class="bt" id='btQtd2'><a>Qtd. Componente</a></div>
+			</div>			
+    </div>
+    <div id="statusBar" class="statusBar"></div>
+    
+    <p id="ip"></p> 
+    <script src="entprod.js"></script>
+  </body>
+  
+</html>
